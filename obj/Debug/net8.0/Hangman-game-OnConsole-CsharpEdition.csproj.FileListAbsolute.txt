@@ -1,0 +1,15 @@
+C:\Users\gahx3\Desktop\CSharpCodes\Projetos\Hangman-game-OnConsole-CsharpEdition\bin\Debug\net8.0\Hangman-game-OnConsole-CsharpEdition.exe
+C:\Users\gahx3\Desktop\CSharpCodes\Projetos\Hangman-game-OnConsole-CsharpEdition\bin\Debug\net8.0\Hangman-game-OnConsole-CsharpEdition.deps.json
+C:\Users\gahx3\Desktop\CSharpCodes\Projetos\Hangman-game-OnConsole-CsharpEdition\bin\Debug\net8.0\Hangman-game-OnConsole-CsharpEdition.runtimeconfig.json
+C:\Users\gahx3\Desktop\CSharpCodes\Projetos\Hangman-game-OnConsole-CsharpEdition\bin\Debug\net8.0\Hangman-game-OnConsole-CsharpEdition.dll
+C:\Users\gahx3\Desktop\CSharpCodes\Projetos\Hangman-game-OnConsole-CsharpEdition\bin\Debug\net8.0\Hangman-game-OnConsole-CsharpEdition.pdb
+C:\Users\gahx3\Desktop\CSharpCodes\Projetos\Hangman-game-OnConsole-CsharpEdition\obj\Debug\net8.0\Hangman-game-OnConsole-CsharpEdition.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gahx3\Desktop\CSharpCodes\Projetos\Hangman-game-OnConsole-CsharpEdition\obj\Debug\net8.0\Hangman-game-OnConsole-CsharpEdition.AssemblyInfoInputs.cache
+C:\Users\gahx3\Desktop\CSharpCodes\Projetos\Hangman-game-OnConsole-CsharpEdition\obj\Debug\net8.0\Hangman-game-OnConsole-CsharpEdition.AssemblyInfo.cs
+C:\Users\gahx3\Desktop\CSharpCodes\Projetos\Hangman-game-OnConsole-CsharpEdition\obj\Debug\net8.0\Hangman-game-OnConsole-CsharpEdition.csproj.CoreCompileInputs.cache
+C:\Users\gahx3\Desktop\CSharpCodes\Projetos\Hangman-game-OnConsole-CsharpEdition\obj\Debug\net8.0\Hangman-game-OnConsole-CsharpEdition.sourcelink.json
+C:\Users\gahx3\Desktop\CSharpCodes\Projetos\Hangman-game-OnConsole-CsharpEdition\obj\Debug\net8.0\Hangman-game-OnConsole-CsharpEdition.dll
+C:\Users\gahx3\Desktop\CSharpCodes\Projetos\Hangman-game-OnConsole-CsharpEdition\obj\Debug\net8.0\refint\Hangman-game-OnConsole-CsharpEdition.dll
+C:\Users\gahx3\Desktop\CSharpCodes\Projetos\Hangman-game-OnConsole-CsharpEdition\obj\Debug\net8.0\Hangman-game-OnConsole-CsharpEdition.pdb
+C:\Users\gahx3\Desktop\CSharpCodes\Projetos\Hangman-game-OnConsole-CsharpEdition\obj\Debug\net8.0\Hangman-game-OnConsole-CsharpEdition.genruntimeconfig.cache
+C:\Users\gahx3\Desktop\CSharpCodes\Projetos\Hangman-game-OnConsole-CsharpEdition\obj\Debug\net8.0\ref\Hangman-game-OnConsole-CsharpEdition.dll
