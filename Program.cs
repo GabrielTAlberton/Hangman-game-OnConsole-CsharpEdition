@@ -5,8 +5,9 @@ internal class Program
     private static void Main(string[] args)
     {
         Functions FuncoesJogo = new Functions();
-        FuncoesJogo.ObterPalavraSecreta();
-        FuncoesJogo.MontarDisplaySecreto();
+        FuncoesJogo.ObterPalpite();
+        FuncoesJogo.ChecarPalpite();
+
         
     }
 }

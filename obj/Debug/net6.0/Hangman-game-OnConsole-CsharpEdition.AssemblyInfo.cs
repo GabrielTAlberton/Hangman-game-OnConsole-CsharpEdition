@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Hangman-game-OnConsole-CsharpEdition")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d1a8ae4a445494e389874f89fc956a483b7546a5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cc0c0c00281e5eb45f5fc8101731596d6eacea60")]
 [assembly: System.Reflection.AssemblyProductAttribute("Hangman-game-OnConsole-CsharpEdition")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Hangman-game-OnConsole-CsharpEdition")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
