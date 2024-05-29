@@ -68,7 +68,7 @@ namespace Hangman_game_OnConsole_CsharpEdition.Models
                 if (DisplayOcultoLista[indexador] == " ")
                 {
                     continue;
-                    // TO-DO: criar lista sem os espacos em branco para executar esse metodo, manter a com espaco em branco para display somente
+                    // TO-DO: criar lista sem os espacos em branco para executar esse metodo, manter a com espaco em branco para display somente e criar um metodo de atualizacao do displaystring
                 }
 
                 if (palpiteCharHolder == letraPalavraSecreta)
