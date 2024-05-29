@@ -8,9 +8,12 @@ namespace Hangman_game_OnConsole_CsharpEdition.Models
     public class Functions
     {
         private List<string> ListaFrutas  { get; }
-        private List<string> DisplayOcultoPalavraSecreta { get; set; }
+        private List<string> DisplayOcultoLista { get; set; }
         private string PalavraSecreta { get; set;}
+        private string DisplayOcultoString { get; set;}
         private int QuantidadeVidasRestantes { get; }
+
+        public string Palpite { get; set; }
 
          public Functions()
          {
@@ -24,23 +27,33 @@ namespace Hangman_game_OnConsole_CsharpEdition.Models
          public void ObterPalavraSecreta()
          {
             Random randomizador = new Random();
-            int indiceAleatorio = randomizador.Next(0, ListaFrutas.Count);
-            PalavraSecreta = ListaFrutas[indiceAleatorio];
-            Console.WriteLine(PalavraSecreta);
-            
-            
+            PalavraSecreta = ListaFrutas[randomizador.Next(0, ListaFrutas.Count)];
          }
-         
+
+         public void MontarDisplaySecreto()
+         {
+            DisplayOcultoLista = new List<string>();
+            foreach (char letra in PalavraSecreta)
+            {
+                DisplayOcultoLista.Add("_");
+                DisplayOcultoLista.Add(" ");
+            }
+
+            DisplayOcultoString = string.Join("", DisplayOcultoLista);
+         }    
 
         public void ChecarPalpite()
         {
-            
+            if (PalavraSecreta.Contains(Palpite))
+            {
+                
+            }
         }   
 
-        public void ObterPalpite()
+        public string ObterPalpite()
         {
             Console.WriteLine("Tente advinharDigite uma letra: \n");
-            string palpite = Console.ReadLine().ToLower();
+            return Palpite = Console.ReadLine().ToLower();
         }
     }
 }

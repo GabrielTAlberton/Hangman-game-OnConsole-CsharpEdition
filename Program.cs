@@ -4,7 +4,9 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        Functions jogo = new Functions();
-        jogo.ObterPalavraSecreta();
+        Functions FuncoesJogo = new Functions();
+        FuncoesJogo.ObterPalavraSecreta();
+        FuncoesJogo.MontarDisplaySecreto();
+        
     }
 }
