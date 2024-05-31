@@ -11,19 +11,21 @@ namespace Hangman_game_OnConsole_CsharpEdition.Models
         private List<string> DisplayOcultoLista { get; set; }
         private string PalavraSecreta { get; set;}
         private string DisplayOcultoString { get; set;}
-        private int QuantidadeVidasRestantes { get; }
+        private int QuantidadeVidasRestantes { get; set; }
 
         public string Palpite { get; set; }
 
          public Functions()
          {
-            ListaFrutas = new List<string> {"Abacaxi", "Abacate", "Açaí", "Ameixa", "Banana", "Caju", "Carambola", "Caqui", 
-            "Cereja", "Coco",  "Goiaba", "Grapo", "Jabuticaba", "Kiwi", "Laranja", "Limão", "Maçã", "Mamão", "Manga", 
-            "Maracujá", "Melancia",  "Melão", "Morango", "Pera", "Pêssego", "Pitanga", "Tangerina", "Uva", "Jaca", "Figo", 
-            "Amora", "Mirtilo", "Framboesa", "Pêssego", "Romã", "Papaia", "Acerola", "Ameixa", "Pêssego", "Pitaya", "Cereja", 
-            "Graviola", "Tamarindo", "Tâmara", "Nêspera", "Jambo", "Lichia"};
+            ListaFrutas = new List<string> {"Abacaxi", "Abacate", "Açai", "Ameixa", "Banana", "Caju", "Carambola", "Caqui", 
+            "Cereja", "Coco",  "Goiaba", "Grapo", "Jabuticaba", "Kiwi", "Laranja", "Limao", "Maca", "Mamao", "Manga", 
+            "Maracuja", "Melancia",  "Melao", "Morango", "Pera", "Pessego", "Pitanga", "Tangerina", "Uva", "Jaca", "Figo", 
+            "Amora", "Mirtilo", "Framboesa", "Pêssego", "Roma", "Papaia", "Acerola", "Ameixa", "Pitaya", "Cereja", 
+            "Graviola", "Tamarindo", "Tamara", "Nespera", "Jambo", "Lichia"};
             ObterPalavraSecreta();
             MontarDisplaySecreto();
+            QuantidadeVidasRestantes = 6;
+
          }
 
          public void ObterPalavraSecreta()
@@ -65,23 +67,38 @@ namespace Hangman_game_OnConsole_CsharpEdition.Models
             {
                 char letraPalavraSecreta = PalavraSecreta[indexador];
 
-                if (DisplayOcultoLista[indexador] == " ")
-                {
-                    continue;
-                    // TO-DO: criar lista sem os espacos em branco para executar esse metodo, manter a com espaco em branco para display somente e criar um metodo de atualizacao do displaystring
-                }
-
                 if (palpiteCharHolder == letraPalavraSecreta)
                 {
-                    DisplayOcultoLista[indexador+1] = Palpite;
+                    DisplayOcultoLista[indexador*2] = Palpite;
                 }
             }
         }
 
+        public void PalpiteErrado()
+        {
+            Console.WriteLine($"Errado! A palavra não possui a letra: {Palpite}");
+            QuantidadeVidasRestantes--;
+        }
+
+
         public void ObterPalpite()
         {
-            Console.WriteLine("Tente advinharDigite uma letra: ");
+            Console.WriteLine("Tente advinhar. Digite uma letra: ");
             Palpite = Console.ReadLine().ToLower();
+        }
+
+        public void ChecarFimDeJogo()
+        {
+            if (!DisplayOcultoLista.Contains("_"))
+            {
+                Console.WriteLine($"Parabéns! Voce descobriu a palavra secreta: {PalavraSecreta}!");
+            }
+
+            if (QuantidadeVidasRestantes == 0)
+            {
+                Console.WriteLine($"Que pena! Voce nao conseguiu descobrir a palavra secreta a tempo: {PalavraSecreta}.");
+            }
+
         }
     }
 }
