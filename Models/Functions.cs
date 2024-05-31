@@ -52,11 +52,13 @@ namespace Hangman_game_OnConsole_CsharpEdition.Models
         {
             if (PalavraSecreta.Contains(Palpite))
             {
-
                 PalpiteCorreto();
                 DisplayOcultoString = string.Join("", DisplayOcultoLista);
                 Console.WriteLine(DisplayOcultoString);
-
+            }
+            else
+            {
+                PalpiteErrado();
             }
         }   
 
@@ -83,21 +85,26 @@ namespace Hangman_game_OnConsole_CsharpEdition.Models
 
         public void ObterPalpite()
         {
+            Console.WriteLine($"Voce possui {QuantidadeVidasRestantes} tentativas restantes.");
             Console.WriteLine("Tente advinhar. Digite uma letra: ");
             Palpite = Console.ReadLine().ToLower();
         }
 
-        public void ChecarFimDeJogo()
+        public bool ChecarFimDeJogo()
         {
             if (!DisplayOcultoLista.Contains("_"))
             {
                 Console.WriteLine($"Parabéns! Voce descobriu a palavra secreta: {PalavraSecreta}!");
+                return true;
             }
 
             if (QuantidadeVidasRestantes == 0)
             {
                 Console.WriteLine($"Que pena! Voce nao conseguiu descobrir a palavra secreta a tempo: {PalavraSecreta}.");
+                return true;
             }
+
+            return false;
 
         }
     }

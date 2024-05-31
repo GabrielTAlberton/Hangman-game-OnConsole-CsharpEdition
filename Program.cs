@@ -5,8 +5,21 @@ internal class Program
     private static void Main(string[] args)
     {
         Functions FuncoesJogo = new Functions();
-        FuncoesJogo.ObterPalpite();
-        FuncoesJogo.ChecarPalpite();
+        
+        while (true)
+        {
+            if (FuncoesJogo.ChecarFimDeJogo())
+            {
+                break;
+            }
+
+            FuncoesJogo.ObterPalpite();
+            FuncoesJogo.ChecarPalpite();
+            
+
+
+
+        }
 
         
     }
