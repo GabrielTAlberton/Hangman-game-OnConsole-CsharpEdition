@@ -32,7 +32,7 @@ namespace Hangman_game_OnConsole_CsharpEdition.Models
          {
             Random randomizador = new Random();
             PalavraSecreta = ListaFrutas[randomizador.Next(0, ListaFrutas.Count)].ToLower();
-            Console.WriteLine($"palavra secreta = {PalavraSecreta}");
+            
          }
 
          public void MontarDisplaySecreto()
